@@ -51,6 +51,12 @@ nav .system-title h2 {
     background-color: #ffffff; /* fundo branco */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+    transition: background-color 0.3s ease, color 0.3s ease; /* transição para cor de fundo e texto */
+}
+
+.container.dark-mode {
+    background-color: #000000; /* fundo preto */
+    color: #ffffff; /* texto branco */
 }
 
 .overview, .graphs, .device-status, .logs {
