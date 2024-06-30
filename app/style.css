@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* ou #000000 para fundo preto */
-    color: #333333; /* cor do texto principal */
+    background-color: #ffffff;
+    color: #333333;
     transition: background-color 0.3s ease;
 }
 
@@ -31,16 +31,17 @@ nav .system-title h2 {
 }
 
 .theme-button {
-    background-color: #2ecc71; /* verde */
-    color: #ffffff; /* texto branco */
+    background-color: #ffffff; /* branco */
+    color: #3498db; /* azul */
     border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
+    border-radius: 50%; /* botão redondo */
+    padding: 10px;
     cursor: pointer;
 }
 
 .theme-button:hover {
-    background-color: #27ae60; /* verde mais escuro no hover */
+    background-color: #3498db; /* azul */
+    color: #ffffff; /* texto branco */
 }
 
 .container {
@@ -93,21 +94,6 @@ nav .system-title h2 {
 .bar {
     width: 20px;
     background-color: #e74c3c; /* vermelho */
-}
-
-.control-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2ecc71; /* verde */
-    color: #ffffff; /* texto branco */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.control-button:hover {
-    background-color: #27ae60; /* verde mais escuro no hover */
 }
 
 .logs-container {

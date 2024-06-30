@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI System ISECHC</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Adicionando ícones do Font Awesome para o tema claro/escuro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav>
         <div class="system-title">
             <h2>System ISECHC</h2>
         </div>
-        <button class="theme-button" id="toggle-theme">Toggle Theme</button>
+        <button class="theme-button" id="toggle-theme"><i class="fas fa-sun"></i></button>
     </nav>
     <main class="container">
         <section class="overview">
@@ -62,12 +64,10 @@
                 <div class="status-item">
                     <span class="status-label">Water Pump:</span>
                     <span class="status-value" id="pump-status">Off</span>
-                    <button class="control-button" id="toggle-pump">Turn On Pump</button>
                 </div>
                 <div class="status-item">
                     <span class="status-label">Valve:</span>
                     <span class="status-value" id="valve-status">Closed</span>
-                    <button class="control-button" id="toggle-valve">Open Valve</button>
                 </div>
             </div>
         </section>
