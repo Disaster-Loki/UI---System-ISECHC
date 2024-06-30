@@ -1,4 +1,3 @@
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +12,12 @@ body {
 }
 
 body.dark-mode {
-    background-color: #000000;
+    background-color: #1b1717;
     color: #ffffff;
 }
 
 nav {
-    background-color: #3498db; /* azul */
+    background-color: #3498db; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -26,37 +25,37 @@ nav {
 }
 
 nav .system-title h2 {
-    color: #ffffff; /* cor do texto branco */
-    margin: 0; /* Remove margem padrão */
+    color: #ffffff; 
+    margin: 0; 
 }
 
 .theme-button {
-    background-color: #ffffff; /* branco */
-    color: #3498db; /* azul */
+    background-color: #ffffff; 
+    color: #3498db; 
     border: none;
-    border-radius: 50%; /* botão redondo */
+    border-radius: 50%; 
     padding: 10px;
     cursor: pointer;
 }
 
 .theme-button:hover {
-    background-color: #3498db; /* azul */
-    color: #ffffff; /* texto branco */
+    background-color: #3498db; 
+    color: #ffffff; 
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* fundo branco */
+    background-color: #ffffff; 
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
-    transition: background-color 0.3s ease, color 0.3s ease; /* transição para cor de fundo e texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .container.dark-mode {
-    background-color: #000000; /* fundo preto */
-    color: #ffffff; /* texto branco */
+    background-color: #000000;; 
+    color: #ffffff; /
 }
 
 .overview, .graphs, .device-status, .logs {
@@ -75,8 +74,8 @@ nav .system-title h2 {
 
 .overview-item, .status-item {
     padding: 10px;
-    background-color: #f39c12; /* laranja */
-    color: #ffffff; /* texto branco */
+    background-color: #f39c12;
+    color: #ffffff; 
     border-radius: 4px;
 }
 
@@ -85,9 +84,14 @@ nav .system-title h2 {
 }
 
 .graph {
-    height: 300px; /* ajuste conforme necessário */
-    background-color: #ecf0f1; /* cinza claro */
+    height: 300px; 
+    background-color: #ecf0f1; 
     border-radius: 8px;
+    transition: background-color 0.3s ease; 
+}
+
+.container.dark-mode .graph {
+    background-color: #1a1717; 
 }
 
 .bar-chart {
@@ -99,11 +103,11 @@ nav .system-title h2 {
 
 .bar {
     width: 20px;
-    background-color: #e74c3c; /* vermelho */
+    background-color: #e74c3c; 
 }
 
 .logs-container {
-    /* Estilos para a seção de logs */
+    /* Estilos para logs */
 }
 
 .logs-list {
@@ -112,8 +116,8 @@ nav .system-title h2 {
 }
 
 .log-item {
-    background-color: #3cb7e7; /* azul */
-    color: #ffffff; /* texto branco */
+    background-color: #3cb7e7;
+    color: #ffffff; 
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 4px;
@@ -125,11 +129,11 @@ nav .system-title h2 {
 }
 
 .status-value.on {
-    background-color: #2ecc71; /* verde */
-    color: #ffffff; /* texto branco */
+    background-color: #2ecc71;
+    color: #ffffff; 
 }
 
 .status-value.off {
-    background-color: #e74c3c; /* vermelho */
-    color: #ffffff; /* texto branco */
+    background-color: #e74c3c;
+    color: #ffffff; 
 }
