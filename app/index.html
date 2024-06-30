@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI System ISECHC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="system-title">
+            <h2>System ISECHC</h2>
+        </div>
+        <button class="theme-button" id="toggle-theme">Toggle Theme</button>
+    </nav>
+    <main class="container">
+        <section class="overview">
+            <h2>System Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-item">
+                    <span class="overview-label">Luminosity:</span>
+                    <span class="overview-value" id="luminosity">250</span>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-label">Temperature:</span>
+                    <span class="overview-value" id="temperature">22°C</span>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-label">Humidity:</span>
+                    <span class="overview-value" id="humidity">50%</span>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-label">pH Level:</span>
+                    <span class="overview-value" id="ph-level">6.5</span>
+                </div>
+                <div class="overview-item">
+                    <span class="overview-label">Water Level:</span>
+                    <span class="overview-value" id="water-level">80%</span>
+                </div>
+            </div>
+        </section>
+        <section class="graphs">
+            <h2>Graphs</h2>
+            <div class="graph">
+                <!-- Simulação de gráfico -->
+                <div class="bar-chart">
+                    <div class="bar" style="height: 70%;"></div>
+                    <div class="bar" style="height: 50%;"></div>
+                    <div class="bar" style="height: 80%;"></div>
+                    <div class="bar" style="height: 40%;"></div>
+                    <div class="bar" style="height: 60%;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="device-status">
+            <h2>Device Status</h2>
+            <div class="status-grid">
+                <div class="status-item">
+                    <span class="status-label">Status:</span>
+                    <span class="status-value" id="system-status">Normal</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Water Pump:</span>
+                    <span class="status-value" id="pump-status">Off</span>
+                    <button class="control-button" id="toggle-pump">Turn On Pump</button>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Valve:</span>
+                    <span class="status-value" id="valve-status">Closed</span>
+                    <button class="control-button" id="toggle-valve">Open Valve</button>
+                </div>
+            </div>
+        </section>
+        <section class="logs">
+            <h2>Logs</h2>
+            <div class="logs-container">
+                <!-- Simulação de registros de logs -->
+                <ul class="logs-list">
+                    <li class="log-item">Log 1: Sistema iniciado às 08:00</li>
+                    <li class="log-item">Log 2: Bomba acionada às 08:30</li>
+                    <li class="log-item">Log 3: Ajuste de pH realizado às 09:15</li>
+                    <li class="log-item">Log 4: Última irrigação às 10:00</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* ou #000000 para fundo preto */
+    color: #333333; /* cor do texto principal */
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #3498db; /* azul */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .system-title h2 {
+    color: #ffffff; /* cor do texto branco */
+    margin: 0; /* Remove margem padrão */
+}
+
+.theme-button {
+    background-color: #2ecc71; /* verde */
+    color: #ffffff; /* texto branco */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    background-color: #27ae60; /* verde mais escuro no hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.overview, .graphs, .device-status, .logs {
+    margin-bottom: 30px;
+}
+
+.overview h2, .graphs h2, .device-status h2, .logs h2 {
+    margin-bottom: 15px;
+}
+
+.overview-grid, .status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.overview-item, .status-item {
+    padding: 10px;
+    background-color: #f39c12; /* laranja */
+    color: #ffffff; /* texto branco */
+    border-radius: 4px;
+}
+
+.overview-label, .status-label {
+    font-weight: bold;
+}
+
+.graph {
+    height: 300px; /* ajuste conforme necessário */
+    background-color: #ecf0f1; /* cinza claro */
+    border-radius: 8px;
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.bar {
+    width: 20px;
+    background-color: #e74c3c; /* vermelho */
+}
+
+.control-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71; /* verde */
+    color: #ffffff; /* texto branco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.control-button:hover {
+    background-color: #27ae60; /* verde mais escuro no hover */
+}
+
+.logs-container {
+    /* Estilos para a seção de logs */
+}
+
+.logs-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.log-item {
+    background-color: #3cb7e7; /* azul */
+    color: #ffffff; /* texto branco */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.status-value {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.status-value.on {
+    background-color: #2ecc71; /* verde */
+    color: #ffffff; /* texto branco */
+}
+
+.status-value.off {
+    background-color: #e74c3c; /* vermelho */
+    color: #ffffff; /* texto branco */
+}
